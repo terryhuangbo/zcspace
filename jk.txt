@@ -1,0 +1,38 @@
+echo '11';exit();
+
+localhost
+http://localhost/zcspace/1/index.php/
+
+user/register
+{
+  "appkey": "zcspace",
+  "phoneNumber":"15829847258",
+  "pwd":"1987101",
+  "verifyCode": "111"
+}
+
+
+user/verifyCode
+{
+  "appkey": "zcspace",
+  "phoneNumber":"15829847258",
+  "verifyCode":"123456",
+  "userType":"1"
+  
+}
+
+user/login
+{
+  "appkey": "zcspace",
+  "phoneNumber":"15829847258",
+  "pwd":"1987101"
+}
+
+user/modifyPwd
+{
+  "appkey": "zcspace",
+  "phoneNumber":"15829847258",
+  "pwdNew":"1987101",
+  "pwdOld":"1987"
+}
+

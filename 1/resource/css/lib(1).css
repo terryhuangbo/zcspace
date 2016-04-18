@@ -1,0 +1,62 @@
+a img,body,button,div,fieldset,form,h1,h2,h3,h4,h5,h6,html,img,input,li,menu,ol,p,textarea,ul{padding:0; margin:0; border:0; list-style: none; font-size:1em; font-family:"微软雅黑", "宋体";}
+body {min-width:320px; width:auto; margin:0px auto;}
+.tou {width:auto; height:6%; background-image:url(../images/bg.jpg); background-position: 0 0; background-repeat: repeat-x; font-size:2em; font-weight:400;color:#FFF;}
+.tou_l {width:4%; float:left; margin-left:4%;}
+.tou_m {width:84%; float:left; text-align:center;}
+.tou_r {width:4%; float:left; text-align:right; margin-right:4%;}
+
+.shai{width:auto; height:90px; background-color:#efefef; padding:30px 0px 10px 0px;}
+.shai ul{width:33%; text-align:center; float:left;}
+
+.caitiao{width:auto;}
+
+.sheyingshi{width:auto; height:525px; padding:30px 15px 0 15px;}
+.sheyingshi_link{position: absolute; width:1050px; height:500px; z-index:1;}
+
+.touxiang{width:283px; height:283px; float:left;}
+.touxiang_vip{position: absolute; width:60px; height:60px; z-index:1;}
+
+.jieshao{width:auto; height:283px; float:left; margin-left:20px;}
+.jieshao ul{ font-size:40px; color:#666;}
+.jieshao ul li{height:75px;}
+.jieshao_l{ width:310px; float:left; font-size:55px; font-weight:bold; color:#333333;}
+.jieshao_m{width:200px; float:left; margin-top:20px;}
+.jieshao_r{width:230px; float:left; color:#F00; text-align:right; margin-top:20px;}
+
+.zuopin{width:auto; height:220px; float:left; border-bottom: 1px solid #666;}
+.zuopin ul{}
+.zuopin ul li{display:Inline; float:left; margin:30px 0px 20px 18px;}
+
+.sign{width:auto; height:9%; background-color:#864798; font-size:1.5em;}
+.sign_l{width:45%; height:6%; float:left; background-color:#efefef; margin-left:4%; border:1px solid #666; text-align:center;}
+.sign_r{width:45%; height:6%; float:right; background-color:#550b84; margin-right:4%; border:1px solid #666; text-align:center; color:#FFF;}
+
+.signcon{width:auto; padding:4%; font-size:1em;}
+.signcon_t{width:auto; height:72px; border:1px solid #666; margin-bottom:4%;}
+.signcon_b{width:auto; height:72px; border:1px solid #666;}
+.signcon_f{width:auto; height:72px; text-align:right; text-decoration:underline;}
+
+.bigbutton{width:auto; height:6%; background-color:#ff4001; margin:4%; font-size:1.5em; text-align:center; color:#FFF;}
+
+/* www.divcss5.com CSS下拉菜单实例 */ 
+#nav{line-height: 24px; background:#666} 
+#nav a{display: block; width: 80px; text-align:center} 
+#nav a:link {color:#666; text-decoration:none} 
+#nav a:visited {color:#666;text-decoration:none} 
+#nav a:hover {color:#FFF;text-decoration:none;font-weight:bold} 
+ 
+#nav li{float: left; width: 80px; background:#CCC} 
+#nav li a:hover{ background:#999} 
+#nav li ul{line-height: 27px; text-align:left;left: -999em; width: 180px; position: absolute} 
+#nav li ul li{float: left; width: 180px;background:#EFEFEF} 
+ 
+ 
+#nav li ul a{display: block; width: 156px;text-align:left;padding-left:24px; overflow:hidden} 
+ 
+#nav li ul a:link {color:#666; text-decoration:none} 
+#nav li ul a:visited {color:#666;text-decoration:none} 
+#nav li ul a:hover {color:#F3F3F3;text-decoration:none;font-weight:normal;background:#C00} 
+ 
+#nav li:hover ul{left: auto} 
+#nav li.sfhover ul{left: auto} 
+#content{clear: left} 

@@ -1,0 +1,17 @@
+name: zeyebang
+version: 1
+handle:
+- compress:  if ( out_header["Content-type"] ~ "text/html" ) compress
+- compress:  if ( out_header["Content-type"] ~ "text/css" ) compress
+- compress:  if ( out_header["Content-type"] ~ "text/javascript" ) compress
+- compress:  if ( out_header["Content-type"] ~ "text/html" ) compress
+- compress:  if ( out_header["Content-type"] ~ "image/jpeg" ) compress
+- compress:  if ( out_header["Content-type"] ~ "image/png" ) compress
+cron:
+- description: Database Backup
+  url: /index.php/misc/cron/dbbackup?appkey=zyb
+  schedule: every day of month 04:00
+- description: Get Job Opportunity Backup
+  url: /index.php/misc/cron/fetchjobopportunity?appkey=zyb
+  schedule: every 100 mins
+  timezone: Beijing

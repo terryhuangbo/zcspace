@@ -1,0 +1,544 @@
+SAE
+http://1.zcspace.sinaapp.com/index.php/
+
+localhost
+http://localhost/zcspace/1/index.php/
+
+生产
+http://www.smartxidian.cn/zcspace/index.php/
+
+echo '<pre>';print_r($result);exit();
+
+$jsonArray = json_decode(file_get_contents('php://input'));
+
+          $errors = array();
+          if (!array_key_exists('userId', $jsonArray)) {
+            array_push($errors, array(
+              'code' => '却少参数',
+              'message' => '却少参数:userId'
+              ));
+            $this->response(array(
+              "response_status"=>"error",
+              "response_error_data" => $errors), 200);
+          }
+          $userId = trim($jsonArray->userId);
+
+if (!count($res)) {
+            array_push($errors, array(
+              'code' => '205',
+              'message' => '相关数据不存在'
+              ));
+            $this->response(array(
+              "response_status"=>"error",
+              "response_error_data" => $errors), 200);
+          }
+          
+user/login
+{
+	"appkey": "zcspace",
+	"phoneNumber": "13681781694",
+	"pwd": "1987101"
+}
+
+user/register
+{
+	"appkey": "zcspace",
+	"phoneNumber": "13681781694",
+	"pwd": "1987101",
+	"verifyCode":"123"
+}
+
+user/modifyPwd
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"verifyCode": "123456",
+	"phoneNumber": "13681781694",
+	"newPwd": "1987101",
+	"pwdOld":"1987101"
+}
+
+
+user/getInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef"
+}
+
+user/updateInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"avatarUrl": "www.baidu.com",
+	"nick": "大波",
+	"gender": "1",
+	"birth": "1987-10-01",
+	"province": "四川",
+	"city": "成都",
+	"phoneNum": "13681781694",
+	"email": "hb@123.com"
+}
+
+user/addSchoolExperience
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"schoolName": "清华大学",
+	"duration": "2011-09-01至2015-07-01"
+}
+
+user/deleteSchoolExperience
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"schoolId": "school558a9e0e33743"
+}
+
+user/addProjectExperience
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"name": "高斯算法",
+	"detail":"不好弄啊"
+}
+
+user/deleteProjectExperience
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"projectId": "proExp558adb2b1bfad"
+}
+
+user/addWorkExperience
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"companyName": "国家仪器",
+	"duration":"2012-02-11到2015-07-25"
+}
+
+user/deleteWorkExperience
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"companyId": "workExp558adf3e84fb6"
+}
+
+advive/add
+{
+	"appkey": "zcspace",
+	"content": "我做大投资人"
+}
+
+project/rank
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"rankId": "rankf23sajlfds123",
+	"page": 1,
+    "pageSize": 3
+}
+
+project/keywords
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"keywords": "",
+	"page": 1,
+    "pageSize": 3
+}
+
+project/filter
+{
+	"appkey": "zcspace",
+	"entreOrentation": "电子商务",
+	"location": "成都",
+	"page": 1,
+    "pageSize": 3
+}
+
+project/updateInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"logoUrl": "www.wenfang.com",
+	"projectId": "project55ad13929a30c",
+	"name": "文芳",
+	
+	"provinceId": "province0a3b694ghd5311e48",
+	"cityId": "city0a3b694gj65311e48",
+	"location": {
+					"province":"江西",
+					"city":"上饶"
+
+				},
+	"entreOrentation": "云计算",
+	"brief": "我爱文芳我爱文芳",
+	"tags": ["tagdfjskal09","tagdfjs89l09"]
+}
+
+project/updateProspect
+{
+	"appkey": "zcspace",
+	"projectId": "project55388437541c3",
+	"introduction":"黄茂黄茂黄茂",
+	"advantage": "黄波黄波黄波黄波",
+	"prospect": {
+					"estimateTime":"2015-10-28 11:15:04",
+					"estimatePrice":"970",
+					"detail":"黄波是个好好子好孩子"
+
+				}
+}
+
+project/updateFinance
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"projectId": "project55388437541c3",
+	"process":"开发阶段",
+	"finance": {
+					"financeSource":"魔鬼投资阶段",
+					"financeAmount":"970000"
+				}
+}
+
+project/addTeamer
+{
+	"appkey": "zcspace",
+	"userId" : "user5584effcaa3ef",
+	"projectId": "project55388437541c3",
+	"avatarUrl": "www.hb.com",
+	"name": "黄大卫",
+	"positionId": "positonqwer2134",
+	"school":"北京大学"
+}
+
+project/updateTeamer
+{
+	"appkey": "zcspace",
+	"userId" : "user5584effcaa3ef",
+	"teamerId": "team55966dd27fc09",
+	"name": "唐太宗",
+	"position": "皇帝",
+	"school":"太学"
+}
+
+project/deleteTeamer
+{
+	"appkey": "zcspace",
+	"userId" : "user5584effcaa3ef",
+	"projectId": "project55388437541c3",
+	"teamerId": "teamer55960a52655f7"
+}
+
+project/addRecruit
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"projectId": "project55388437541c3",
+	"position": "后端",
+	"cooperation": "兼职",
+	"salary": "正常工资",
+	"stock": "13%"
+}
+
+project/deleteRecruit
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"recruitId": "newpartner55960f918f0d3"
+}
+
+project/updateRecruit
+{
+	"appkey": "zcspace",
+	"recruitId": "newpartner55960f71d856c",
+	"positionId": "positonqwer2134",
+	"cooperationId": "cooperation1234hb23",
+	"salaryId": "salarysunj4321",
+	"stockId": "stockqwer7891"
+}
+
+project/updatePlanFinanceAmount
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"projectId": "project55388437541c3",
+	"planFinanceAmount": "30000"
+}
+
+comment/add
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"roleId": "role55388437541c3",
+	"role_id": "project5596727f2c1ee",
+	"content":"毛主席万岁！"
+}
+
+comment/get
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"role_id": "project55388437541c3",
+	"page": 1,
+  	"pageSize": 2
+}
+
+comment/getMessages
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3egggg",
+	"page": 1,
+	"pageSize": 20
+}
+
+concern/add
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"appkey": "zcspace",
+	"roleId": "role55388437541c3",
+	"role_id": "project5596727f2c1ee"
+}
+
+concern/get
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"page": 1,
+	"pageSize": 20
+}
+
+incubator/updateInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incubatorId": "incubator55974d55b3c41",
+	"name": "牛顿",
+	"address": "仁寿县富家区",
+	"location": {
+					"province":"陕西",
+					"city":"宝鸡",
+					"address":"宝鸡市仁寿县"
+				},
+	"acreage": "20000",
+	"introduction": "好东西！",
+	"price": "12000"
+}
+
+incubator/updateServe
+	{
+		"appkey": "zcspace",
+		"userId": "user5584effcaa3ef",
+		"incubatorId": "incubator55974d55b3c41",
+		"requirement": "不能随地大小便",
+		"propertyService": "要买钥匙",
+		"specialService": "收邮件"
+		
+	}
+
+incubator/addStarProject
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incubatorId": "incubator55974d55b3c41",
+	"projectId": "project55388437541c3"
+	
+}
+
+incubator/deleteStarProject
+{
+	"appkey": "zcspace",
+	"incubatorId": "incubator55974d55b3c41",
+	"projectId": "project55388437541c3"
+	
+}
+
+incuactivity/get
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incubatorId": "incubator55974d55b3c41"
+	
+}
+
+incuactivity/add
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incubatorId": "incubator55974d55b3c41",
+	"name":"君士坦丁",
+	"date":"2015-09-09",
+	"detail":"在君士坦丁举行庆祝拜占庭帝国建立1000年"
+}
+
+incuactivity/delete
+{
+	"appkey": "zcspace",
+	"incuActId": "incuact559a6a77dcafe"
+	
+}
+
+incuactivity/update
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incuActId": "incuact559a6c2056f42",
+	"name": "亚历山大里亚",
+	"detail": "在亚历山大里亚举行庆祝拜占庭帝国建立1000年"
+}
+
+incuactivity/addInvestor
+{
+	"appkey": "zcspace",
+	"incuActId": "incuact559a6c2056f42",
+	"investors": ["incubator5584effcaa3fg", "incubator55974d55b3c41"]
+}
+
+investor/add
+{
+	"appkey": "zcspace"
+}
+
+investor/updateInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"investorId": "investor559a82b0c9cd9",
+	"logoUrl": "http://www.sina.com",
+	"name": "索罗斯",
+	"location": {
+					"provinceId":"province0a3b694ghd5311e48",
+					"cityId":"city0a3b694gj65311e48"
+				},
+	"brief": "金融大鳄",
+	"introduction":"1997金融危机"
+}
+
+investor/addInvestPartner
+{
+	"appkey": "zcspace",
+	"investorId": "investor559a82b0c9cd9",
+	"name": "比尔盖茨",
+	"avatarUrl": "http://www.sohu.com"
+}
+
+investor/deleteInvestPartner
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"investPartId": "invespart559aa3950f417"
+}
+
+investor/addProject
+{
+	"appkey": "zcspace",
+	"logoUrl": "www.baidu.com",
+	"investorId": "investor559a82b0c9cd9",
+	"name": "丝芙兰项目",
+	"entreId": "entre1dfsaljkfds",
+	"processId": "processId",
+	"brief": "我是中国人"
+}
+
+recommend/addTeams
+{
+	"appkey": "zcspace",
+	"teamIds": ["team55966dd27fc8f", "team55966df2e16fb"]
+}
+
+recommend/addProjects
+{
+	"appkey": "zcspace",
+	"projectIds": ["project5596727f2c1ee", "project55388437541c3"]
+}
+
+project/detail
+{
+	"appkey": "zcspace",
+	"projectId": "project5596727f2c1ee"
+}
+
+incubator/detail
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incubatorId": "incubator5584effcaa3ef"
+}
+
+investor/detail
+{
+	"appkey": "zcspace",
+	"investorId": "investor55388437541c3"
+}
+
+user/updateRoles
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"roles":["role55388437541c3", "role5538880cd6634"]
+}
+
+project/addTags
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"projectId": "project55388437541c3",
+	"tags": ["创意十足", "前景广阔"]
+}
+
+project/deleteTag
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"tagId": "tag55a91399378ae"
+}
+
+project/add
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef"  
+}
+
+project/getInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"rankId": "rankf23sajlfds123",
+	"page": 1,
+    "pageSize": 3
+}
+
+incubator/getInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"page": 1,
+    "pageSize": 3
+}
+
+investor/getInfo
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef"
+}
+
+incubator/deleteStarProject
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"incuProId": "incupro55b49f571be7b"
+	
+}
+
+investor/deleteInvestProject
+{
+	"appkey": "zcspace",
+	"userId": "user5584effcaa3ef",
+	"invProId": "incupro55b4feffaaf44"
+	
+}
+
+

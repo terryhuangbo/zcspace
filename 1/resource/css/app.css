@@ -1,0 +1,478 @@
+.price {
+    font-size: 12px;
+    color: rgb(255, 0, 0);
+    font-weight: normal;
+}
+
+.p {
+    color: #666666;
+    font-size: 0.8em;
+}
+
+/*photographer home page*/
+.author {
+    height: 110px;
+    padding-top: 10px;
+}
+
+.avatar > .vip {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+}
+
+.avatar > img {
+    max-width: 91px;
+    min-height: 91px;
+}
+
+.author > .description {
+    right: 10px;
+    position: absolute;
+}
+
+.description .price {
+    position: absolute;
+    right: 0px;
+}
+
+.description > .dept {
+    margin: 5px 0px;
+    font-size: 14px;
+}
+
+.description .skills {
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+figcaption {
+    font-size: 0.75em;
+    color: rgb(102, 102, 102);
+    text-align: center;
+    margin: 0px;
+    line-height: 0.75em;
+}
+
+.opus {
+    min-height: 80px;
+    padding: 10px;
+}
+
+.choice-container {
+    height: 155px;
+    padding: 10px;
+}
+
+.choice-container .choice-item {
+    width: 50%;
+    height: 87px;
+    float: left;
+}
+
+.choice-container .choice-item > img {
+    width: 70px;
+    height: 50px;
+}
+
+.choice-container .choice-info {
+    height: 80px;
+    position: relative;
+}
+
+.choice-container .choice-item .choice-title {
+    font-size: 12px;
+    float: right;
+    font-weight: normal;
+}
+
+.choice-container .choice-item .price {
+    font-size: 12px;
+    width: 55px;
+    float: right;
+    margin-top: -25px;
+    color: rgb(255, 0, 0);
+}
+
+.choice-container .choice-item input[type="checkbox"] {
+    float: left;
+    margin-top: 22px;
+    margin-right: 5px;
+}
+
+/*comb 套餐*/
+.combo {
+    min-height: 60px;
+    padding-top: 10px;
+}
+
+.combo h4 {
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.combo input {
+    margin-top: 12px;
+}
+
+.combo .price {
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.combo-detail {
+    min-height: 90px;
+    padding-top: 10px;
+}
+
+.img-column {
+    width: 30%;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.desc-wrapper h4 {
+    color: #683b93;
+    line-height: 39px;
+    padding-left: 10px;
+    border-bottom: 1px solid #c2cabd;
+}
+
+.desc-wrapper p {
+    color: #666666;
+    font-size: 0.8em;
+    padding: 3px 10px;
+}
+
+.desc-wrapper p > a {
+    float: right;
+    margin-right: 10px;
+    color: #333333;
+}
+
+.desc-wrapper > .tips {
+    padding-left: 20px;
+}
+
+.desc-wrapper > .tips > li {
+    line-height: 24px;
+    font-size: 0.8em;
+    color: #666666;
+    list-style-type: disc;
+}
+
+.desc-wrapper > table {
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px
+}
+
+.desc-wrapper > table td {
+    border-spacing: 0;
+}
+
+/*address*/
+.basic-form {
+    padding: 10px;
+}
+
+.form-group {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #c2cabd;
+}
+
+.form-group:last-child {
+    border-bottom: 0 none;
+}
+
+.form-label {
+    color: #333333;
+    font-size: 15px;
+    height: 24px;
+    line-height: 24px;
+}
+
+.form-label > i {
+    color: #683b93;
+    font-size: 15px;
+}
+
+.form-input {
+    height: 24px;
+    line-height: 24px;
+    width: 70%;
+    border: 0 none;
+    text-indent: 6px;
+    padding: 3px;
+    font-size: 15px;
+}
+
+.form-btn {
+    text-align: center;
+    padding-top: 5px;
+}
+
+.btn-add {
+    color: #ffffff;
+    background-color: #8c64a3;
+    display: inline-block;
+    width: 100px;
+}
+
+.addr-list {
+    padding: 10px;
+}
+
+.addr-list > li:first-of-type {
+    color: #333333;
+}
+
+.addr-list > li {
+    line-height: 30px;
+}
+
+.addr-item {
+    font-size: 14px;
+    border: 1px solid #c2cabd;
+    margin-bottom: 10px;
+}
+
+.addr-item .addr-header {
+    color: #8c64a3;
+    font-size: 14px;
+    padding: 0px 10px;
+    border-bottom: 1px solid #c2cabd;
+    position: relative;
+}
+
+.addr-item .addr {
+    padding-left: 20px;
+}
+
+.addr-item .addr-text {
+    display: block;
+    padding-left: 10px;
+}
+
+.addr-item .user-option {
+    right: 20px;
+    position: absolute;
+}
+
+.addr-item .new-addr-btn {
+    text-align: right;
+    line-height: 24px;
+    padding-right: 20px;
+}
+
+/*成品页*/
+.goods-list > li {
+    min-height: 70px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #c2cabd;
+}
+
+.goods-list .items {
+    text-align: left;
+    padding-top: 10px;
+    margin-left: 10px;
+}
+
+.goods-list .check-wrapper .checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.goods-list .item-core {
+    min-height: 60px;
+}
+
+.goods-list .goods-pic {
+    width: 70px;
+    height: 70px;
+    display: block;
+    float: left;
+}
+
+.goods-list .goods-info {
+    margin-left: 80px;
+}
+
+.goods-list p {
+    color: #666666;
+    font-size: 0.8em;
+}
+
+.goods-list .price {
+    color: #ff0000;
+    right: 10px;
+    position: absolute;
+}
+
+.goods-list .quantity-wrapper {
+    float: right;
+    margin-right: 10px;
+    margin-top: -20px;
+}
+
+.goods-list .quantity-wrapper a {
+    width: 40px;
+    height: 20px;
+    text-align: center;
+    display: inline-block;
+    font-weight: 800;
+}
+
+.goods-list .quantity {
+    width: 20px;
+    height: 17px;
+    border: 1px solid #c2cabd;
+    text-align: center;
+}
+
+/*用户点评*/
+.comment-list {
+    padding-top: 10px;
+    min-height: 100px;
+}
+
+.comment-img {
+    min-height: 60px;
+}
+
+.comment-list .nickname {
+    display: inline-block;
+}
+
+.comment-list .star {
+    line-height: 10px;
+    display: inline-block;
+    float: right;
+}
+
+.comment-list .date {
+    color: #b8b8b8;
+    font-size: 12px;
+    text-align: right;
+    padding-right: 5px;
+}
+
+/*order*/
+.order {
+    min-height: 70px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+
+.order .order-core {
+    border-bottom: 1px solid #efefef;
+}
+
+.order img {
+    min-width: 110px;
+    min-height: 76px;
+}
+
+.order .img {
+    width: 36%;
+    position: absolute;
+}
+
+.order .description {
+    width: 58%;
+    left: 150px;
+    position: absolute;
+}
+
+.order .order-title {
+    color: #333333;
+    margin-bottom: 5px;
+}
+
+.order .detail {
+    max-height: 55px;
+}
+
+.order .price {
+    margin-left: 50px;
+}
+
+.order-container {
+    height: 125px;
+    padding: 10px;
+}
+
+.order-container .order-item {
+    width: 50%;
+    height: 55px;
+    float: left;
+}
+
+.order-container .order-item > img {
+    width: 70px;
+    height: 50px;
+}
+
+.order-container .order-info {
+    height: 80px;
+    position: relative;
+}
+
+.order-container .order-item .order-title {
+    font-size: 12px;
+    float: right;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+.order-container .order-item .price {
+    font-size: 12px;
+    width: 55px;
+    float: right;
+    margin-top: -25px;
+    color: rgb(255, 0, 0);
+}
+
+.comment {
+    padding: 0 10px 10px 10px;
+}
+
+.comment > h3 {
+    color: rgb(140, 100, 163);
+    line-height: 40px;
+}
+
+.comment > textarea {
+    border: 1px solid rgb(204, 204, 204);
+    width: 95%;
+    padding: 5px;
+    font-size: 0.9em;
+    color: #333333;
+}
+
+.sum {
+    padding: 10px;
+}
+
+.sum > .discount {
+    color: rgb(255, 0, 0);
+    font-size: 1.4em;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.sum > .original-price {
+    color: #666666;
+    font-size: 0.9em;
+    text-align: right;
+}
+
+.am-datepicker-purple tr.am-datepicker-header {
+    background: rgb(104, 60, 147);
+}
